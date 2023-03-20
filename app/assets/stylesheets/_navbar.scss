@@ -5,14 +5,14 @@
   left: 40px;
   right: auto;
   z-index: 10;
-  color: red;
+  color: #10b981;
 
   li {
     margin-bottom: 16px;
 
     i {
       font-size: 42px;
-      color: green;
+      color: #10b981;
 
       &:hover {
         font-size: 43px;
@@ -28,7 +28,7 @@
   left: auto;
   right: 40px;
   z-index: 10;
-  color: red;
+  color: #10b981;
 
   a {
     margin: 24px auto;
@@ -50,5 +50,11 @@
   width: 1px;
   height: 160px;
   margin: 0px auto;
-  background-color: red;
+  background-color: #10b981;
+}
+
+.nav {
+  a {
+    font-size: 16px;
+  }
 }

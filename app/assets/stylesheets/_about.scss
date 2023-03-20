@@ -13,11 +13,9 @@
   margin-right: 56px;
 
   img {
-    // height: 300px;
     max-width: 100%;
     border-radius: 4px;
     margin-right: 80px;
-    // filter: grayscale(100%);
     filter: blur(1px) grayscale(100%);
 
     &:hover {
@@ -31,7 +29,7 @@
   }
 
   .box {
-    border: 2px solid green;
+    border: 2px solid #10b981;
     top: 10px;
     left: 10px;
     z-index: -1;

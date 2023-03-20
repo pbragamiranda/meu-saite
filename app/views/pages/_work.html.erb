@@ -1,0 +1,57 @@
+<section id="work-experience">
+  <%= render(NumberedHeadingComponent.new(number: "02", title: "Work Experience")) %>
+
+  <div class= "work" data-controller="tabs" data-tabs-default-tab-value="one">
+
+    <div class="work-tabs">
+      <button id="one" data-tabs-target="btn" data-action="click->tabs#select">Le Wagon</button>
+      <button id="two" data-tabs-target="btn" data-action="click->tabs#select">ChartMogul</button>
+      <button id="three" data-tabs-target="btn" data-action="click->tabs#select">Telos Lab</button>
+      <button id="four" data-tabs-target="btn" data-action="click->tabs#select">FGV / EBAPE</button>
+      <button id="five" data-tabs-target="btn" data-action="click->tabs#select">Public Sector</button>
+    </div>
+
+    <div>
+      <div data-tabs-target="tab" id="one">
+        <%= render(WorkExperienceComponent.new(company: "Le Wagon", position: "Web Dev Teacher & Batch Manager", duration: "Oct 2020 - Present")) do %>
+          Teaching technical skills to creative people.
+
+          * Presenting lectures and workshops about Ruby, HTML, CSS, JavaScript, Ruby on Rails , relational databases (SQLite and PostgreSQL) and MVC architecture.
+          * Assisting students in 1 on 1 fashion.
+          * Contributing & creating solutions for students final projects
+        <% end %>
+      </div>
+      <div data-tabs-target="tab" id="two">
+        <%= render(WorkExperienceComponent.new(company: "ChartMogul", position: "Backend Engineer", duration: "Jan 2023 - Feb 2023")) do %>
+          Integrations team
+        <% end %>
+      </div>
+      <div data-tabs-target="tab" id="three">
+        <%= render(WorkExperienceComponent.new(company: "Telos Lab", position: "Full Stack Developer", duration: "Sep 2021 - Jul 2022")) do %>
+          Creating digital products and strategies for social impact.
+
+          * Designing, development, and maintaining of Web-Applications with Ruby on Rails.
+          * Full Stack Developer, mainly focused on back-end solutions.
+          * Frequently communicating with clients.
+        <% end %>
+      </div>
+      <div data-tabs-target="tab" id="four">
+        <%= render(WorkExperienceComponent.new(company: "FGV / EBAPE", position: "Monitor", duration: "Jun 2020 - Dec 2020")) do %>
+          Descriptive Statistics with Python monitor for FGV's undergraduate students.
+
+          * Translated code from R to Python
+          * Weekly office hours to clear students doubts
+        <% end %>
+      </div>
+      <div data-tabs-target="tab" id="five">
+        <%= render(WorkExperienceComponent.new(company: "FGV / EBAPE", position: "Monitor", duration: "Jun 2020 - Dec 2020")) do %>
+          Descriptive Statistics with Python monitor for FGV's undergraduate students.
+
+          * Translated code from R to Python
+          * Weekly office hours to clear students doubts
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+</section>
