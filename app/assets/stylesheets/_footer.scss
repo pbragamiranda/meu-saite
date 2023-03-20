@@ -1,0 +1,17 @@
+.footer {
+  height: auto;
+  display: flex;
+  padding: 15px;
+  min-height: 70px;
+  margin-top: 16px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  .content {
+    color: white;
+    line-height: 1;
+    font-size: 16px;
+  }
+}
