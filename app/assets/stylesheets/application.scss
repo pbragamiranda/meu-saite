@@ -15,5 +15,71 @@
  */
 
 body {
-  background-color: #00425A;
+  background-color: #171717;
+  color: white;
+}
+
+section {
+    margin: 64px auto;
+    padding: 100px 0px;
+    max-width: 1000px;
+}
+
+.intro  {
+  p {
+    font-size: clamp(14px, 5vw, 16px);
+    color: red;
+  }
+
+  h1 {
+    font-size: clamp(40px, 8vw, 80px);
+  }
+
+  h5 {
+    font-size: 20px;
+    color: green;
+  }
+}
+
+.left {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  color: red;
+
+  li {
+    margin-bottom: 16px;
+  }
+}
+
+.right {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  color: red;
+
+  a {
+    margin: 20px auto;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+  }
+
+}
+
+
+.line {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 160px;
+  margin: 0px auto;
+  background-color: red;
 }
