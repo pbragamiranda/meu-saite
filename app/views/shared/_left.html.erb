@@ -1,7 +1,23 @@
 <ul class="left flex flex-col items-center">
-  <li>GH</li>
-  <li>LN</li>
-  <li>TW</li>
-  <li>@</li>
-  <div class="line"></div>
+  <li>
+    <%= link_to "https://github.com/pbragamiranda" do  %>
+      <i class="fa-brands fa-github"></i>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to "https://www.linkedin.com/in/pbragamiranda/" do  %>
+      <i class="fa-brands fa-linkedin-in"></i>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to "https://twitter.com/pbragamiranda" do  %>
+      <i class="fa-brands fa-twitter"></i>
+    <% end %>
+  </li>
+  <li>
+    <%= mail_to "pbragamiranda@pm.me" do  %>
+      <i class="fa-regular fa-envelope"></i>
+    <% end %>
+  </li>
+  <span class="line"></span>
 </ul>

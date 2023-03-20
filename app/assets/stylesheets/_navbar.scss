@@ -1,0 +1,54 @@
+.left {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  color: red;
+
+  li {
+    margin-bottom: 16px;
+
+    i {
+      font-size: 42px;
+      color: green;
+
+      &:hover {
+        font-size: 43px;
+      }
+    }
+  }
+}
+
+.right {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+  color: red;
+
+  a {
+    margin: 24px auto;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+
+    &:hover {
+      font-size: 16.2px
+    }
+  }
+
+}
+
+.line {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 160px;
+  margin: 0px auto;
+  background-color: red;
+}
