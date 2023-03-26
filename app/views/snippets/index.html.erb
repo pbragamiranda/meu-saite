@@ -1,0 +1,36 @@
+<section>
+  <div class="flex justify-center">
+    <div>
+      <h1 class="title">Some Code Snippets and Quick Tutorials</h1>
+      <p>
+        Short tutorials and / or quick tutorials
+      </p>
+    </div>
+  </div>
+
+  <div class="relative rounded-xl overflow-auto mt-8">
+    <div class="shadow-sm overflow-hidden my-8">
+      <table class="border-collapse table-auto w-full text-sm">
+        <thead>
+          <tr>
+            <th class="border-b dark:border-slate-600 font-medium p-4 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">Name</th>
+            <th class="border-b dark:border-slate-600 font-medium p-4 pl-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">Description</th>
+            <th class="border-b dark:border-slate-600 font-medium p-4 pr-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">Category</th>
+            <th class="border-b dark:border-slate-600 font-medium p-4 pr-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left">Last Updated</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white dark:bg-slate-800">
+          <%= render SnippetRowComponent.new(url: "#", name: "Custom Redirect Devise",
+                                             description:"Create a custom redirect after sign in / log in when using Devise gem",
+                                             category: "Ruby on Rails", last_updated: "Mar 2023") %>
+          <%= render SnippetRowComponent.new(url: :snippets_custom_redirect_devise,name: "Tabs with StimulusJS",
+                                             description:"Create Tabs with StimulusJS",
+                                             category: "JavaScript", last_updated: "Mar 2023") %>
+          <%= render SnippetRowComponent.new(url: "#", name: "Tags with TagifyJS",
+                                             description:"Create tags with TagifyJS",
+                                             category: "JavaScript", last_updated: "Feb 2023") %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
