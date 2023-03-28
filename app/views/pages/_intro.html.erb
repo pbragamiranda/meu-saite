@@ -1,9 +1,36 @@
 <section>
-  <div class="flex-col intro">
-    <p>Hello, my name is</p>
-    <h1>pedro miranda.</h1>
-    <h1>I build things for the web.</h1>
+  <ul class="social flex items-center">
+    <li>
+      <span class="social-line"></span>
+    </li>
+    <li>
+      <%= mail_to "pbragamiranda@pm.me" do  %>
+        <i class="fa-regular fa-envelope"></i>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to "https://www.linkedin.com/in/pbragamiranda/" do  %>
+        <i class="fa-brands fa-linkedin-in"></i>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to "https://github.com/pbragamiranda" do  %>
+        <i class="fa-brands fa-github"></i>
+      <% end %>
+    </li>
+    <li>
+      <%= link_to "https://twitter.com/pbragamiranda" do  %>
+        <i class="fa-brands fa-twitter"></i>
+      <% end %>
+    </li>
+  </ul>
+
+  <div class="intro flex-col">
+    <p>colé,</p>
+    <h1>I'm pedro.</h1>
+    <h2>Full Stack Developer & Teacher.</h2>
     <h5>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences.
         Currently, I’m focused on building accessible, human-centered products at</h5>
   </div>
+
 </section>
