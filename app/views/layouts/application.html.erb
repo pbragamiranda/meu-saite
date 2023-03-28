@@ -13,9 +13,11 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
-    <%= render 'shared/wave'  %>
-    <%= yield %>
-    <%= render 'shared/footer' %>
+    <div class="min-h-screen">
+      <%= render 'shared/navbar' %>
+      <%= render 'shared/wave'  %>
+      <%= yield %>
+      <%= render 'shared/footer' %>
+    </div>
   </body>
 </html>
