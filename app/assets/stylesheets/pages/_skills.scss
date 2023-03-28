@@ -1,0 +1,25 @@
+#skills {
+  padding: 0px;
+
+  a {
+    margin: 0px 4px;
+    width: 64px;
+  }
+
+  li::before {
+    content: "•";
+    color: #E11299;
+    margin-right: 4px;
+  }
+
+  h3 {
+    margin-bottom: 4px;
+  }
+
+  h3::before {
+    content: "•";
+    color: #E11299;
+    margin-right: 4px;
+  }
+
+}
