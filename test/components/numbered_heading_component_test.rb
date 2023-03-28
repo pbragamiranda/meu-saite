@@ -2,11 +2,11 @@
 
 require "test_helper"
 
-class NumberedHeadingComponentTest < ViewComponent::TestCase
+class SectionHeadingComponentTest < ViewComponent::TestCase
   def test_component_renders_something_useful
     # assert_equal(
     #   %(<span>Hello, components!</span>),
-    #   render_inline(NumberedHeadingComponent.new(message: "Hello, components!")).css("span").to_html
+    #   render_inline(SectionHeadingComponent.new(message: "Hello, components!")).css("span").to_html
     # )
   end
 end
